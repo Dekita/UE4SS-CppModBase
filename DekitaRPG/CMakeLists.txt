@@ -7,7 +7,7 @@ add_library(${TARGET} SHARED "dllmain.cpp" "Source/Kore.cpp" "Source/Utils.cpp")
 target_include_directories(${TARGET} PRIVATE .)
 
 #target_link_libraries(${TARGET} PRIVATE File JSON Input)
-target_link_libraries(${TARGET} PUBLIC cppsdk xinput1_3)
+target_link_libraries(${TARGET} PUBLIC ue4ss)
 
 # copy output dll to steam hogwarts legacy ue4ss cpp mod directory for testing
 set(GameDir "D:/SteamLibrary/steamapps/common/Hogwarts Legacy")
